@@ -1,0 +1,53 @@
+:root {
+    --txt-color-01:#333; /*колір основного тексту*/
+    --txt-color-02:#ccc; /*колір основного тексту інверсія*/
+    --big-color-01:#ccc; /*колір фону 1*/
+    --big-color-02:#555; /*колір фону 2*/
+    --link-color-01:#900; /*колір покликань*/
+    --link-color-02:#c00; /*колір покликань hover*/
+    --btn-color-01: #900; /*колір кнопки 1*/
+    --btn-color-01:#c00; /*колір кнопки 2*/
+    --mod-padding: 20px; /*відступи до конекту на мобільному*/
+    --ipad-padding: 40px; 
+    --max-width:1600px;
+    --ver-desk-pad: 50px; /*відступи по вертикалі у секціях desktop*/
+    --ver-mod-pad: 25px; /*відступи по вертекалі у секціях mobile*/    
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4;
+    color: var(--txt-color-01)
+}
+
+h1,h2,h3,h4,h5,h6 {
+     font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+p{
+      margin-bottom: 1em;
+}
+
+h1{font-size: 2rem;} /* REM коеф. від font-size body */
+h2{font-size: 1.5rem;}
+h3{font-size: 1.35rem;}
+
+header,
+section,
+footer {
+    padding-top: var(--ver-desk-pad);
+    padding-bottom: var(--ver-desk-pad);
+}
+
+.inside{
+    max-width: var(--ver-max-width);
+    margin-left: auto;
+    margin-left: auto;
+}
