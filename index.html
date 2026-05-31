@@ -1,34 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>заголовок лендингу</title>
-    <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill Landing</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="top">
-    <header>    
-        <inside>
-            <section id="s1">
-                <div class="inside"> 
-                    <h1>заголовок 1 рівня</h1>                  
-                    <p><span>Lorem ipsum dolor  </span> ipsum dolor, sit amet consectetur adipisicing elit. Assumenda architecto quod mollitia iusto distinctio modi officia odit, quaerat maxime laborum molestiae quos quibusdam asperiores aperiam commodi repellat reprehenderit ab iste, totam, consequatur minus consectetur. Expedita eum aliquam asperiores consequatur quia fuga amet fugit, ratione voluptatum in voluptas? In voluptate earum, dolore vero totam atque. Corrupti laboriosam maxime architecto natus? Commodi ex dolorem quas fugiat cumque at excepturi esse libero, voluptates laboriosam, aperiam ipsa est ullam rem necessitatibus assumenda iste? Necessitatibus non, quas atque maxime repellendus minus nostrum accusantium laboriosam excepturi quis velit dolorum earum facere molestiae porro beatae maiores laudantium ipsum quia. Beatae eveniet reiciendis minus ducimus nostrum consectetur eius rem at, maxime nihil consequatur suscipit explicabo, nemo sit quidem.</p>
-                    <h2>заголовок 2 рівня</h2>
-                    <p><span>Lorem ipsum dolor</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum, similique temporibus dolorum ipsa minima dolore, deleniti unde nam qui maiores esse harum quod aut quasi earum a, aperiam voluptates reiciendis ut sunt consequatur repellendus. Natus maiores, iure saepe vero nemo accusamus veniam, minima excepturi reprehenderit nihil, dolores temporibus? Explicabo.</p>
-                </div>
-            </section>
-            <section id="s2">
-                <div class="inside"></div>
-            </section>
-            <section id="s3">
-                <div class="inside"></div>
-            </section>inside
 
-        </inside>
-    </header>
+<header class="header">
+  <div class="container header__top">
+    <div class="header__navrow">
+      <nav class="nav" aria-label="Головна навігація">
+        <a class="nav__link" href="#about">About us</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="nav__link" href="#join">Join</a>
+      </nav>
+    </div>
 
-    
+    <a class="brand" href="#top" aria-label="На початок сторінки">
+      <span class="brand__text"></span>
+    </a>
+  </div>
+
+  <div class="container hero">
+    <div class="hero__grid">
+      <div class="hero__left">
+        <p class="hero__kicker">Soft reset for your mind</p>
+        <h1 class="hero__title">Welcome to <span>Chill Club</span></h1>
+        <p class="hero__lead">
+          Маленькі ритуали спокою щодня: паузи, дихання, тиша, музика — все, що повертає фокус і баланс.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="#join">Chill now</a>
+          <a class="btn btn--ghost" href="#about">More ideas</a>
+        </div>
+
+        <ul class="hero__chips" aria-label="Переваги">
+          <li class="chip">менше тривоги</li>
+          <li class="chip">кращий фокус</li>
+          <li class="chip">стабільний настрій</li>
+          <li class="chip">більше енергії</li>
+        </ul>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero-card">
+          <div class="hero-card__media" role="img" aria-label="Заглушка для hero-зображення">
+            <img src="img/dog.jpg" alt="" />
+          </div>
+          <div class="hero-card__badge">take a breath</div>
+          <div class="hero-card__footer">
+            <div class="hero-card__meta">
+              <p class="hero-card__meta-title">Ritual of calm</p>
+              <p class="hero-card__meta-sub">2 minutes • anytime</p>
+            </div>
+            <button class="btn btn--ghost hero-card__btn" type="button">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="to-top" href="#top" aria-label="Вгору">↑</a>
+</header>
+
+<main>
+  <section class="welcome" id="about">
+    <div class="container">
+      <h2 class="section-title welcome__title">WELCOME TO CHILL CLUB WELCOME TO CHILL CLUB</h2>
+
+      <div class="welcome__grid">
+        <div class="welcome__img welcome__img--left" aria-label="Заглушка фото зліва" role="img">
+          <img src="img/welcome-left.jpg" alt="" />
+        </div>
+
+        <div class="welcome__center">
+          <p class="welcome__text">
+            Chill is a feeling of calm, comfort, and freedom. It’s about enjoying simple moments, such as a warm cup,
+            soft music, and a peaceful atmosphere. Chill means being gentle with yourself — and finding quiet
+            meaning, even, or time spent with friends.
+          </p>
+          <p class="welcome__text" style="margin-top: 0.75rem;">
+            Chill is not just a style — it’s a way of feeling and living.
+          </p>
+          <a class="btn welcome__btn" href="#join">CHILL NOW</a>
+        </div>
+
+        <div class="welcome__img welcome__img--right" aria-label="Заглушка фото справа" role="img">
+          <img src="img/welcome-right.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vibe" id="vibe">
+    <div class="container vibe__layout">
+      <h2 class="section-title vibe__title">CHILL VIBE</h2>
+
+      <div class="vibe__track" tabindex="0" aria-label="Гортайте картки вліво або вправо">
+        <div class="vibe__grid">
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Заглушка превʼю 1">
+              <img src="img/vibe-netflix.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL WITH NETFLIX
+              <br>Cozy vibes, and a moment just for
+              <br>yourself.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Заглушка превʼю 2">
+              <img src="img/vibe-nature.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL WITH NATURE
+              <br>True chill comes from peace, silence, and
+              <br>balance.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Заглушка превʼю 3">
+              <img src="img/vibe-third.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL WITH NATURE
+              <br>Chilling by the pool is the perfect kind
+              <br>of calm calm and relaxation.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Chill with music">
+              <img src="img/musik_chill.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL WITH MUSIC
+              <br>Soft melodies, quiet headphones, and a moment
+              <br>just for yourself.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Chill in nature">
+              <img src="img/monkey_chill.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL IN NATURE
+              <br>Wildflowers, warm light, slow breath, and
+              <br>nowhere to hurry.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__media" role="img" aria-label="Chill in bed">
+              <img src="img/chill1.jpg" alt="" />
+            </div>
+            <p class="card__desc">CHILL IN BED
+              <br>Warm sheets, soft glow, and an easy pause
+              <br>from the day.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ideas" id="contact">
+    <div class="container">
+      <div class="ideas__grid">
+        <div class="ideas__img ideas__img--shift" role="img" aria-label="Заглушка великого фото">
+          <img src="img/ideas.jpg" alt="" />
+        </div>
+
+        <div class="ideas__form" id="join">
+          <h2 class="section-title">MORE IDEAS FOR CHILL</h2>
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="name">NAME</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">EMAIL</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <button class="btn form__btn" type="submit">MORE IDEAS</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__text">Zavgorodnaa Veronika <span aria-hidden="true">😊</span></p>
+  </div>
+</footer>
+
+<script src="js/vibe-scroll.js" defer></script>
 </body>
 </html>
